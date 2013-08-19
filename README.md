@@ -14,7 +14,8 @@ SO if you're create a webapp you can show the design in the correct device layou
 Demo
 --------------------------------------
 
-Coming Soon...
+Open http://playdo.gopagoda.com on a Mobile Device. (Only in Google Chrome Mobile)  
+Or open (this responsive tester)[http://responsive.is/playdo.gopagoda.com] to have a quick view.
 
 
 Designs Includes
@@ -22,6 +23,12 @@ Designs Includes
 
  - Android Holo
  - iOS 7 (Coming Soon)
+
+
+Tested 
+--------------------------------------
+
+ - Nexus 4 :: Google Chrome Mobile
 
 
 Contribution Guides
