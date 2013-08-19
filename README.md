@@ -1,4 +1,61 @@
-Mobile-CSS-Theme
-================
+Mobile CSS Templates
+==================================================
 
-A Mobile theme for Android
+Yeah Yeah, again a mobile CSS template for mobile devices. This time I realy like the Android Holo design 
+and because I would like the create some small webapps with this design I created this Android template in
+the Holo design.
+
+From that vision I also want to create a template conform the iOS7 design. This with the same markup (where possible)
+SO if you're create a webapp you can show the design in the correct device layout.
+
+
+Demo
+--------------------------------------
+
+Coming Soon...
+
+
+Designs Includes
+--------------------------------------
+
+ - Android Holo
+ - iOS 7 (Coming Soon)
+
+
+Contribution Guides
+--------------------------------------
+
+In the spirit of open source software development, the Mobile CSS Templates always encourages community 
+code contribution!
+
+
+License
+--------------------------------------
+
+Ruby on Rails is released under the [GPL v2 license](http://choosealicense.com/licenses/gpl-v2/).
+
+#### The License Simplified
+##### Required
+
+ - License and copyright notice
+ - State Changes
+ - Disclose Source
+
+##### Permitted
+
+ - Commercial Use
+ - Modification
+ - Distribution
+ - Patent Grant
+
+##### Forbidden
+
+ - Hold Liable
+ - Sublicensing
+
+
+Questions?
+--------------------------------------
+
+If you have any questions, please feel free to ask me over
+[mail](mailto:mail@tomclaus.be) or tom.claus at Skype..
