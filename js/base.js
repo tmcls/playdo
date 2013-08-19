@@ -1,3 +1,18 @@
+/**
+ * Playdo - Base Javascript
+ *
+ * The Base Javascript
+ *
+ * This File contains all generic events for 
+ * all devices.
+ *
+ * @project   Playdo
+ * @version   0.1
+ * @author    Tom Claus
+ * @copyright 2013 Playdo
+ * @license   GPL v2
+ */
+
 $(function(){
 
 	/**
@@ -34,8 +49,7 @@ $(function(){
 	 */
 	$("body").swipe({
 		allowPageScroll: 'vertical',
-
-	  	swipeStatus:function(event, phase, direction, distance, duration, fingerCount) {
+	  	swipeStatus: function(event, phase, direction, distance, duration, fingerCount) {
 	  		// Get the current position of the menu
 	  		var current_position = $(".sidemenu").offset().left;
 	  		var slidepos = undefined;
@@ -75,9 +89,7 @@ $(function(){
 		  			opacity = (opacity < 0) ? 0 : opacity;
 		  		}
 
-		  		console.log(slidepos, opacity, direction, app.is_open);
-
-	  			// Als long as we're swiing move the menu...
+	  			// As long as we're swiping move the menu...
 	  			if(phase == "move"){
 	  				$(".sidemenu").css("left", slidepos);
 					$(".darken").show().css("opacity", opacity);
@@ -91,13 +103,13 @@ $(function(){
 	  					app.closeMenu();
 	  			}
 	  		}
-
 	  	}
 	});
-
 });
 
-
+/**
+ * App Class
+ */
 var app = {
 	touch_start_position: undefined,
 	is_open: false,

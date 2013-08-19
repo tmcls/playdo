@@ -1,7 +1,19 @@
 /**
- * Fonts
+ * Playdo - Fonts Stylesheet
+ *
+ * The Fonts used for Playdo
+ *
+ * You need this file for importing all fonts in
+ * the website. This file includes all font-face 
+ * fonts for Android (Roboto) and iOS.
+ *
+ * @project   Playdo
+ * @version   0.1
+ * @author    Tom Claus
+ * @copyright 2013 Playdo
+ * @license   GPL v2
  */
- 
+
 /*@font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Thin-webfont.eot');

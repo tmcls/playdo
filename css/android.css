@@ -1,7 +1,16 @@
-/*
- * Android CSS Templates
+/**
+ * Playdo - Android Stylesheet
  *
- * This is a example template for the Android Google Play Music app.
+ * The Android design stylesheet
+ *
+ * This file includes all styling for
+ * the Android Holo design.
+ *
+ * @project   Playdo
+ * @version   0.1
+ * @author    Tom Claus
+ * @copyright 2013 Playdo
+ * @license   GPL v2
  */
 
 /* ==========================================================================
@@ -18,7 +27,7 @@ body {
 	height: 100%;
 	padding-top: 46px;
 	position: relative;
-	box-sizing:border-box;
+	box-sizing: border-box;
 }
 
 
