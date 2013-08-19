@@ -15,7 +15,7 @@ Demo
 --------------------------------------
 
 Open http://playdo.gopagoda.com on a Mobile Device. (Only in Google Chrome Mobile)  
-Or open (this responsive tester)[http://responsive.is/playdo.gopagoda.com] to have a quick view.
+Or open [this responsive tester](http://responsive.is/playdo.gopagoda.com) to have a quick view.
 
 
 Designs Includes
