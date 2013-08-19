@@ -1,5 +1,7 @@
-Mobile CSS Templates
+Playdo
 ==================================================
+
+The Android Holo and iOS7 CSS Template!
 
 Yeah Yeah, again a mobile CSS template for mobile devices. This time I realy like the Android Holo design 
 and because I would like the create some small webapps with this design I created this Android template in
@@ -25,7 +27,7 @@ Designs Includes
 Contribution Guides
 --------------------------------------
 
-In the spirit of open source software development, the Mobile CSS Templates always encourages community 
+In the spirit of open source software development, Playdo always encourages community 
 code contribution!
 
 
