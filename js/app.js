@@ -18,7 +18,7 @@ var app = {
 	is_open: false,
 
 	init: function(){
-        page.detailView();
+        page.overview();
     },
 
     // Open Left Menu
