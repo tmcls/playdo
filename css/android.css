@@ -241,27 +241,41 @@ ul.sidemenu li a.active {
 .block {
 	display: block;
 	float: left;
-	margin: 4px;
-	background: #FFF;
+	margin: 4px 4px 2px 4px;
 	width: 180px;
 	text-decoration: none;
-	color: #505050;
-	position: relative;
+	overflow: hidden;
+
 }
 .block img {
 	display: block;
 	width: 180px;
 	height: 180px;
 }
+.block .meta {
+	color: #505050;
+	position: relative;
+	background: #FFF;
+	box-shadow: 0 1px 3px #aaa;
+	margin-bottom: 3px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
 .block h2 {
 	font-weight: 300;
 	font-size: 16px;
 	padding: 7px 20px 0 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .block h3 {
 	color: #b5b5b5;
 	font-size: 13px;
 	padding: 1px 20px 8px 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .block .more {
 	display: block;
@@ -270,7 +284,7 @@ ul.sidemenu li a.active {
 	text-indent: -9999px;
 	position: absolute;
 	right: 0;
-	top: 180px;
+	top: 0;
 	width: 24px;
 	height: 32px;
 }
