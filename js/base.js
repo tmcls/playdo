@@ -28,17 +28,21 @@ $(function(){
 	/**
 	 * Close Submenu
 	 */
-	$(".container").on("click", function(e) {
-		e.preventDefault();
-  		$("header .submenu").hide(0);
-	});
+	$(".container, .darken").on("click", function(e) {
+  		$("header .submenu").hide();
+  	});
 
 	/**
 	 * Open/Close Sidemenu by button
 	 */
 	$("header .menu").on("click", function(e){
 		e.preventDefault();
-		if($(".sidemenu").css('left').replace("px","") > -10)
+
+		// Hide other buttons
+		$("header .submenu").hide();
+
+		// Open or Close the menu
+		if(app.is_open)
 			app.closeMenu();
 		else
 			app.openMenu();
@@ -93,8 +97,6 @@ $(function(){
 	  			if(phase == "move"){
 	  				$(".sidemenu").css("left", slidepos);
 					$(".darken").show().css("opacity", opacity);
-
-					console.log($("header .menu"));
 	  			}
 
 	  			// When swipe event is done, open or close the menu totally

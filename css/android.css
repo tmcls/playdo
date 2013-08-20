@@ -28,7 +28,14 @@ body {
 	padding-top: 46px;
 	position: relative;
 	box-sizing: border-box;
-	background: #FFF;
+	background: #e5e5e5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
 }
 
 
@@ -55,7 +62,7 @@ header a.menu {
 	float: left;
 	margin: 9px 8px 9px 14px;
 	background: url("../img/icons/headphone-header.png") no-repeat center center;
-	background-size: 100%;
+	background-size: 28px 30px;
 	height: 30px;
 	width: 28px;
 	position: relative;
@@ -65,7 +72,7 @@ header a.menu::before {
 	content: "";
 	display: block;
 	background: url("../img/icons/menu.png") no-repeat left center;
-	background-size: 100%;
+	background-size: 10px 15px;
 	height: 15px;
 	width: 10px;
 	position: absolute;
@@ -111,21 +118,16 @@ header a.action::after {
 header h1 {
 	display: inline-block;
 	margin: 13px 10px 13px 0px;
-	color: rgba(255,255,255,1);
-	text-decoration: none;
+	color: #FFF;
 	height: 22px;
-	overflow: hidden;
 	font-size: 18px;
-	line-height: 1;
-	position: relative;
-	font-weight: normal;
 }
 
 header a.search {
 	display: inline-block;
 	margin: 9px 10px;
 	background: url("../img/icons/search-header.png") no-repeat center center;
-	background-size: 100%;
+	background-size: 30px 30px;
 	height: 30px;
 	width: 30px;
 	text-indent: -9999px;
@@ -134,8 +136,8 @@ header a.search {
 header a.settings {
 	display: inline-block;
 	margin: 9px 14px;
-	background: url("../img/icons/settings-header.png") no-repeat center center;
-	background-size: 100%;
+	background: url("../img/icons/overflow.png") no-repeat center center;
+	background-size: 5px 20px;
 	height: 30px;
 	width: 30px;
 	text-indent: -9999px;
@@ -231,7 +233,44 @@ ul.sidemenu li a.active {
    Content Container
    ========================================================================== */
 .container {
-	position: relative;
-	padding: 0 8px;
 	height: 100%;
+	padding: 6px 4px 4px;
+	box-sizing: border-box;
+}
+
+.block {
+	display: block;
+	float: left;
+	margin: 4px;
+	background: #FFF;
+	width: 180px;
+	text-decoration: none;
+	color: #505050;
+	position: relative;
+}
+.block img {
+	display: block;
+	width: 180px;
+	height: 180px;
+}
+.block h2 {
+	font-weight: 300;
+	font-size: 16px;
+	padding: 7px 20px 0 12px;
+}
+.block h3 {
+	color: #b5b5b5;
+	font-size: 13px;
+	padding: 1px 20px 8px 12px;
+}
+.block .more {
+	display: block;
+	background: url("../img/icons/overflow_small_dark.png") no-repeat center center;
+	background-size: 4px 15px;
+	text-indent: -9999px;
+	position: absolute;
+	right: 0;
+	top: 180px;
+	width: 24px;
+	height: 32px;
 }
