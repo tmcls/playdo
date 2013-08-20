@@ -18,7 +18,7 @@ var app = {
 	is_open: false,
 
 	init: function(){
-        page.overview();
+        page.detailView();
     },
 
     // Open Left Menu
@@ -35,6 +35,8 @@ var app = {
 		// Set title
 		$("#overview header .left .title").css("display", "inline-block");
         $("#overview header .left .action, header .left .submenu").hide();
+
+        app.setTransparentHeaderOpacity(1);
     },
 
     // Close Left Menu
@@ -53,5 +55,29 @@ var app = {
         // Set Action Menu
         $("#overview header .left .title").hide();
         $("#overview header .left .action").css("display", "inline-block");
+
+        app.setTransparentHeaderOpacity();
    	},
+
+    setTransparentHeaderOpacity: function(value){
+
+        var scrolltop = $(window).scrollTop();
+
+        var new_opacity = (scrolltop/100);
+            new_opacity = value ? value : new_opacity;
+            new_opacity = new_opacity<0.01 ? 0.01 : new_opacity;
+            new_opacity = new_opacity>0.99 ? 0.99 : new_opacity;
+
+        var currentColor = $('header.transparent').css('background-color');
+        var lastComma = currentColor.lastIndexOf(',');
+        var newColor = currentColor.slice(0, lastComma + 1) + new_opacity + ")";
+           
+        $("header.transparent").css('background-color', newColor);
+    },
+
+    getTransparentHeaderOpacity: function(){
+        var currentColor = $('header.transparent').css('background-color');
+        var lastComma = currentColor.lastIndexOf(',');
+        return parseFloat(currentColor.slice(lastComma).replace(",","").replace(")",""));
+    }
 };

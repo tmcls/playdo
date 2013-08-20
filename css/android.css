@@ -25,7 +25,6 @@ body, html {
 }
 body {
 	height: 100%;
-	padding-top: 46px;
 	position: relative;
 	box-sizing: border-box;
 	background: #e5e5e5;
@@ -51,6 +50,12 @@ header {
 	top: 0;
 	left: 0;
 	z-index: 8000;
+}
+
+header.transparent{
+	background: rgba(243, 131, 45, 0);
+	border-bottom-color: rgba(210, 113, 39, 0);
+	
 }
 
 
@@ -236,7 +241,7 @@ ul.sidemenu li a.active {
 	position: fixed;
 	left: 0;
 	top: 0;
-	background: rgba(0,0,0,0.85);
+	background: rgba(0, 0, 0, 0.85);
 	z-index: 5000;
 	width: 100%;
 	height: 100%;
@@ -250,9 +255,19 @@ ul.sidemenu li a.active {
    ========================================================================== */
 .container {
 	height: 100%;
-	padding: 6px 4px 4px;
+	padding: 0;
 	box-sizing: border-box;
 }
+.container.topspace {
+	padding-top: 46px;
+}
+.container.borderspace {
+	padding: 6px 4px 4px;
+}
+.container.borderspace.topspace {
+	padding-top: 52px;
+}
+
 
 .page {
 	display: none;
@@ -307,4 +322,12 @@ ul.sidemenu li a.active {
 	top: 0;
 	width: 24px;
 	height: 32px;
+}
+
+.headerimg {
+	height: 174px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center fixed;
+	background-size: cover;
 }

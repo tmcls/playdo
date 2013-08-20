@@ -59,14 +59,19 @@ $(function(){
 	/**
 	 * Open/Close Sidemenu by swiping
 	 */
-	$("body").swipe({
+	$(window).swipe({
 		allowPageScroll: 'vertical',
 	  	swipeStatus: function(event, phase, direction, distance, duration, fingerCount) {
 	  		// Get the current position of the menu
-	  		var current_position = $(".sidemenu").offset().left;
+	  		var current_position = $(".sidemenu").offset().left;        
 	  		var slidepos = undefined;
 	  		var opacity = undefined;
+	  		var headeropacity = undefined;
 
+	  		var currentColor = $('header.transparent').css('background-color');
+			var lastComma = currentColor.lastIndexOf(',');
+			var color_opacity = undefined;
+			
 	  		// Set startpoint from the touch start event
 	  		if(phase == "start")
 	  			app.touch_start_position = event.touches ? event.touches[0].pageX : event.x;
@@ -90,7 +95,7 @@ $(function(){
 		  			slidepos = slidepos > 0 ? 0 : slidepos;
 
 		  			opacity = distance == 0 ? 1 : distance/305;
-		  			opacity = opacity > 1 ? 1 : opacity;
+		  			opacity = opacity > 0.99 ? 0.99 : opacity;
 
 		  		// When swiping to the left (closing sidemenu)
 		  		}else if(direction == "left" && app.is_open){
@@ -98,13 +103,15 @@ $(function(){
 		  			slidepos = (slidepos < -305) ? -305 : slidepos;
 
 		  			opacity = 1-(distance/305);
-		  			opacity = (opacity < 0) ? 0 : opacity;
+		  			opacity = (opacity < 0.01) ? 0.01 : opacity;
 		  		}
 
 	  			// As long as we're swiping move the menu...
 	  			if(phase == "move"){
 	  				$(".sidemenu").css("left", slidepos);
 					$(".darken").show().css("opacity", opacity);
+
+			  		app.setTransparentHeaderOpacity(opacity);
 	  			}
 
 	  			// When swipe event is done, open or close the menu totally
@@ -117,6 +124,11 @@ $(function(){
 	  		}
 	  	}
 	});
+
+	$(window).scroll(function(e) {
+  		app.setTransparentHeaderOpacity();
+	});
+
 
 	// Start App
 	app.init();
