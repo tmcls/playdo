@@ -93,6 +93,8 @@ $(function(){
 	  			if(phase == "move"){
 	  				$(".sidemenu").css("left", slidepos);
 					$(".darken").show().css("opacity", opacity);
+
+					console.log($("header .menu"));
 	  			}
 
 	  			// When swipe event is done, open or close the menu totally
@@ -105,28 +107,8 @@ $(function(){
 	  		}
 	  	}
 	});
+
+	// Start App
+	app.init();
 });
 
-/**
- * App Class
- */
-var app = {
-	touch_start_position: undefined,
-	is_open: false,
-
-    openMenu: function(){   
-        $(".sidemenu").animate({left: 0}, 300);
-  		$(".darken").show().animate({opacity: 1}, 300);
-		$("header .menu").addClass("open");
-		app.is_open = true;
-    },
-
-   	closeMenu: function(){
-   		$(".sidemenu").animate({left: -305}, 300);
-		$(".darken").animate({opacity: 0}, 300, function(){
-			$(this).hide();
-		});
-		$("header .menu").removeClass("open");
-		app.is_open = false;
-   	}
-};
