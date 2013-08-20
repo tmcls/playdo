@@ -49,6 +49,14 @@ $(function(){
 	});
 
 	/**
+	 *	Close Menu
+	 */
+	$("#overview header .left .title").on("click", function(e){
+		e.preventDefault();
+		app.closeMenu();
+	});
+
+	/**
 	 * Open/Close Sidemenu by swiping
 	 */
 	$("body").swipe({

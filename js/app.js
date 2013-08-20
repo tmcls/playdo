@@ -3,7 +3,8 @@
  *
  * The App Javascript
  *
- * This file contains all logical code for the app.
+ * This file contains all logical code for the app
+ * and all pages
  *
  * @project   Playdo
  * @version   0.1
@@ -17,9 +18,10 @@ var app = {
 	is_open: false,
 
 	init: function(){
-		app.setActionMenu();
-	},
+        page.overview();
+    },
 
+    // Open Left Menu
     openMenu: function(){   
         
     	// Set position
@@ -31,9 +33,11 @@ var app = {
 		app.is_open = true;
 
 		// Set title
-		app.setTitle("Google Play Music");
+		$("#overview header .left .title").css("display", "inline-block");
+        $("#overview header .left .action, header .left .submenu").hide();
     },
 
+    // Close Left Menu
    	closeMenu: function(){
 
    		// Set position
@@ -46,17 +50,8 @@ var app = {
 		// Set status
 		app.is_open = false;
 
-		// Set title
-		app.setActionMenu();
+        // Set Action Menu
+        $("#overview header .left .title").hide();
+        $("#overview header .left .action").css("display", "inline-block");
    	},
-
-   	setTitle: function(title){
-   		$("header .left h1").text(title).css("display", "inline-block");
-   		$("header .left .action, header .left .submenu").hide();
-   	},
-
-   	setActionMenu: function(){
-   		$("header .left h1").hide();
-   		$("header .left .action").css("display", "inline-block");
-   	}
 };

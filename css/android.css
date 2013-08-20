@@ -55,7 +55,7 @@ header {
 
 
 /* ==========================================================================
-    Sidemenu Button
+    Header Buttons
    ========================================================================== */
 header a.menu {
 	display: inline-block;
@@ -115,12 +115,28 @@ header a.action::after {
 	bottom: 0px;
 }
 
-header h1 {
+header .title {
 	display: inline-block;
 	margin: 13px 10px 13px 0px;
 	color: #FFF;
 	height: 22px;
 	font-size: 18px;
+	text-decoration: none;
+	position: relative;
+}
+header .back {
+	margin-left: 15px;
+}
+header .back::before {
+	content: "";
+	background: url("../img/icons/back.png") no-repeat center center;
+	background-size: 7px 14px;
+	height: 26px;
+	width: 17px;
+	display: block;
+	position: absolute;
+	top: -1px;
+	left: -15px;
 }
 
 header a.search {
@@ -236,6 +252,10 @@ ul.sidemenu li a.active {
 	height: 100%;
 	padding: 6px 4px 4px;
 	box-sizing: border-box;
+}
+
+.page {
+	display: none;
 }
 
 .block {
