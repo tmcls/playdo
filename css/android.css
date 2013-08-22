@@ -336,11 +336,11 @@ ul.sidemenu li a.active {
 	height: 48px;
 	background: #FFF;
 }
-.meta {
+.details {
 	padding: 0 0px 0 153px;
 	position: relative;
 }
-.meta img {
+.details img {
 	height: 134px;
 	width: 134px;
 	position: absolute;
@@ -349,7 +349,7 @@ ul.sidemenu li a.active {
 	border: rgba(255,255,255,0.8) solid 1px;
 	box-shadow: 0 0 5px #333;
 }
-.meta h1 {
+.details h1 {
 	font-size: 22px;
 	font-weight: 300;
 	padding: 8px 0 0;
@@ -357,7 +357,7 @@ ul.sidemenu li a.active {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.meta h2 {
+.details h2 {
 	color: #AAA;
 	font-size: 14px;
 	padding: 6px 0 0;
@@ -365,7 +365,7 @@ ul.sidemenu li a.active {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.meta h3 {
+.details h3 {
 	color: #AAA;
 	font-size: 12px;
 	font-weight: 700;
