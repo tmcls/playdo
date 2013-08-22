@@ -54,7 +54,7 @@
     font-weight: 500;
     font-style: normal;
 }*/
-/*@font-face {
+@font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Bold-webfont.eot');
     src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -63,4 +63,4 @@
          url('../fonts/Roboto-Bold-webfont.svg#robotothin') format('svg');
     font-weight: 700;
     font-style: normal;
-}*/
+}

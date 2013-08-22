@@ -331,3 +331,60 @@ ul.sidemenu li a.active {
 	background-position: center center fixed;
 	background-size: cover;
 }
+
+.menu {
+	height: 48px;
+	background: #FFF;
+}
+.meta {
+	padding: 0 0px 0 153px;
+	position: relative;
+}
+.meta img {
+	height: 134px;
+	width: 134px;
+	position: absolute;
+	left: 10px;
+	bottom: 1px;
+	border: rgba(255,255,255,0.8) solid 1px;
+	box-shadow: 0 0 5px #333;
+}
+.meta h1 {
+	font-size: 22px;
+	font-weight: 300;
+	padding: 8px 0 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.meta h2 {
+	color: #AAA;
+	font-size: 14px;
+	padding: 6px 0 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.meta h3 {
+	color: #AAA;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 4px 0 9px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.list a {
+	display: block;
+	text-decoration: none;
+	color: #505050;
+	padding: 21px 16px;
+	font-size: 16px;
+	border-top: 1px solid #CCC;
+}

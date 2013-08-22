@@ -68,11 +68,16 @@ var app = {
             new_opacity = new_opacity<0.01 ? 0.01 : new_opacity;
             new_opacity = new_opacity>0.99 ? 0.99 : new_opacity;
 
-        var currentColor = $('header.transparent').css('background-color');
-        var lastComma = currentColor.lastIndexOf(',');
-        var newColor = currentColor.slice(0, lastComma + 1) + new_opacity + ")";
-           
-        $("header.transparent").css('background-color', newColor);
+        var currentBgColor = $('header.transparent').css('background-color');
+        var lastBgComma = currentBgColor.lastIndexOf(',');
+        var newBgColor = currentBgColor.slice(0, lastBgComma + 1) + new_opacity + ")";
+        $("header.transparent").css('background-color', newBgColor);
+
+
+        var currentBoColor = $('header.transparent').css('border-bottom-color');
+        var lastBoComma = currentBoColor.lastIndexOf(',');
+        var newBoColor = currentBoColor.slice(0, lastBoComma + 1) + new_opacity + ")";
+        $("header.transparent").css('border-bottom-color', newBoColor);
     },
 
     getTransparentHeaderOpacity: function(){
