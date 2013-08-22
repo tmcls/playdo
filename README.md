@@ -29,6 +29,12 @@ Tested
 --------------------------------------
 
  - Nexus 4 :: Google Chrome Mobile
+ - 
+ 
+Coming Soon 
+--------------------------------------
+
+ - Include a real music player and play music
 
 
 Contribution Guides
