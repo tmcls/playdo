@@ -14,8 +14,8 @@ SO if you're create a webapp you can show the design in the correct device layou
 Demo
 --------------------------------------
 
-Open http://playdo.gopagoda.com on a Mobile Device. (Only in Google Chrome Mobile)  
-or open http://playdo.gopagoda.com/demo.html to have a quick demo view.
+Open http://tomclaus.github.io/playdo on a Mobile Device. (Only in Google Chrome Mobile)  
+or open http://tomclaus.github.io/playdo/demo.html to have a quick demo view.
 
 
 Designs Includes
